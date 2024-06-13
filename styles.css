@@ -194,6 +194,12 @@ footer p {
         align-items: center;
     }
 
+    header h1 {
+        letter-spacing: 3px;
+        margin: 0;
+        font-size: 15px;
+    }
+
     nav ul {
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -201,12 +207,21 @@ footer p {
     }
 
     nav ul li {
-        margin-left: 10px;
+        margin-left: 5px;
+        font-size: 4px;
     }
 
     main {
         flex-direction: column;
         padding: 10px;
+    }
+
+    article h2 {
+        font-size: 7px;
+    }
+    
+    p {
+        font-size: 7px;
     }
 
     .ferrari, .lamborghini, .mclaren, .porcshe {
@@ -217,6 +232,7 @@ footer p {
 
     article {
         margin-right: 0;
+        margin-bottom: 10px;
     }
 
     #content {
@@ -228,11 +244,14 @@ footer p {
         justify-content: flex-start; 
     }
 
-    article {
-        margin-bottom: 10px;
-    }
-
     .aside img {
         max-width: 50%;
+    }
+
+    aside h2 {
+        font-size: 7px;
+    }
+    footer p {
+        font-size: 5px;
     }
 }
