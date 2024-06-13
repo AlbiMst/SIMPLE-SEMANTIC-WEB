@@ -1,0 +1,238 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Balthazar', sans-serif;                                                                 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F5F7F8;
+}
+
+header {
+    font-family: 'Race Sport Free', sans-serif;
+    background-color: #151515;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    letter-spacing: 1px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+nav ul li a {
+    color: rgb(180, 179, 179);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+#content {
+    flex: 3;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+article {
+    background-color: #F5F7F8;
+    padding: 10px;
+    border: 1px solid #151515;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex: 1; 
+    margin-right: 10px;
+}
+
+.article-content {
+    overflow: auto;
+    text-align: center;
+}
+
+.ferrari, .lamborghini, .mclaren, .porcshe {
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    filter: drop-shadow(10px 7px 10px #EC255A);
+}
+
+.lamborghini {
+    filter: drop-shadow(10px 7px 10px #ff9901);
+}
+
+.mclaren {
+    filter: drop-shadow(10px 7px 10px #1247e5);
+}
+
+.porcshe {
+    filter: drop-shadow(10px 7px 10px #424442);
+}
+
+.article-content p {
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+article h2 {
+    font-family: 'Race Sport Free', sans-serif;
+    font-size: medium;
+    letter-spacing: 2px;
+    color: #2a2a2a;
+    margin-top: 10px;
+}
+
+p {
+    color: #2a2a2a;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: medium;
+}
+
+span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+aside {
+    flex: 1;
+    background-color: #F5F7F8;
+    padding: 10px;
+    border: 1px solid #151515;
+    text-align: center;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+aside h2 {
+    font-family: 'Race Sport Free', sans-serif;
+    font-size: medium;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    color: #2a2a2a;
+}
+
+aside p {
+    text-align: justify;
+}
+
+aside img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #151515;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    font-family: 'Race Sport Free', sans-serif;
+    font-size: medium;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ferrari, .lamborghini, .mclaren, .porcshe {
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    article {
+        margin-right: 0;
+    }
+
+    #content {
+        margin-right: 0;
+    }
+
+    .article-container {
+        flex-direction: column; 
+        justify-content: flex-start; 
+    }
+
+    article {
+        margin-bottom: 10px;
+    }
+
+    .aside img {
+        max-width: 50%;
+    }
+}
