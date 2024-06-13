@@ -197,7 +197,7 @@ footer p {
     header h1 {
         letter-spacing: 3px;
         margin: 0;
-        font-size: 23px;
+        font-size: 20px;
     }
 
     nav ul {
@@ -208,7 +208,7 @@ footer p {
 
     nav ul li {
         margin-left: 5px;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     main {
@@ -252,6 +252,6 @@ footer p {
         font-size: 7px;
     }
     footer p {
-        font-size: 5px;
+        font-size: 8px;
     }
 }
